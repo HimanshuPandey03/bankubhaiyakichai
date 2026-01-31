@@ -22,7 +22,6 @@ const Feedback = () => {
         const { name, mobile, frequency, message } = formData;
 
         // Use literal star emoji as requested
-        const stars = '⭐'.repeat(rating);
         const whatsappMessage = `*New Feedback*\n\n*Name:* ${name}\n*Mobile:* ${mobile}\n*Frequency:* ${frequency}\n*Message:* ${message}`;
         const encodedMessage = encodeURIComponent(whatsappMessage);
         const whatsappUrl = `https://wa.me/918104913374?text=${encodedMessage}`;
@@ -119,6 +118,10 @@ const Feedback = () => {
                                 onChange={handleChange}
                             ></textarea>
                         </div>
+
+
+
+
 
                         <button type="submit" className="btn btn-primary submit-btn">Send via WhatsApp</button>
                     </form>

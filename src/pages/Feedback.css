@@ -90,22 +90,7 @@
     border-color: var(--color-snack-orange);
 }
 
-.star-rating {
-    display: flex;
-    gap: 10px;
-    font-size: 2rem;
-    cursor: pointer;
-}
 
-.star {
-    color: #444;
-    transition: color 0.2s;
-}
-
-.star:hover,
-.star.filled {
-    color: var(--color-snack-yellow);
-}
 
 .submit-btn {
     width: 100%;

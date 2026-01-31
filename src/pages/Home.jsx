@@ -13,8 +13,8 @@ const Home = () => {
                         <h1 className="hero-title">Banku Bhaiya Ki <span className="highlight">Chai</span></h1>
                         <p className="hero-subtitle">Taste the tradition in every sip.</p>
                         <div className="hero-buttons">
-                            <Link to="/services" className="btn btn-primary">View Menu</Link>
-                            <Link to="/contact" className="btn btn-secondary">Visit Us</Link>
+                            <Link to="/menu" className="btn btn-primary">View Menu</Link>
+                            <Link to="/feedback" className="btn btn-secondary">Visit Us</Link>
                         </div>
                     </div>
                 </div>
