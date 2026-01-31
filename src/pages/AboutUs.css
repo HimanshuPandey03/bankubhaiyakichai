@@ -1,0 +1,131 @@
+.about-container {
+    padding: 100px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-header {
+    margin-bottom: 60px;
+}
+
+.about-header h1 {
+    font-size: 3rem;
+    color: var(--color-snack-orange);
+    margin-bottom: 1rem;
+}
+
+.about-header p {
+    font-size: 1.2rem;
+    color: #ccc;
+}
+
+.team-title {
+    font-size: 2.5rem;
+    color: var(--color-snack-yellow);
+    margin-bottom: 40px;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20px;
+}
+
+.team-card {
+    position: relative;
+    height: 400px;
+    background: #2a2a2a;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+/* Placeholder Image Styling */
+.team-img-placeholder {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #3e2723, #795548);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.member-initial {
+    font-size: 6rem;
+    font-weight: 900;
+    border: 4px solid rgba(255, 255, 255, 0.2);
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.member-name-preview {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Overlay / Swipe Animation */
+.team-info-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(230, 81, 0, 0.95);
+    /* Deep Orange opacity */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    transform: translateY(100%);
+    transition: transform 0.4s ease-in-out;
+    color: white;
+}
+
+.team-card:hover .team-info-overlay {
+    transform: translateY(0);
+}
+
+.team-info-overlay h3 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.role {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.qualification-box {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.qual-label {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    opacity: 0.8;
+}
+
+.qual-text {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
